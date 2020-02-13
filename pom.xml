@@ -24,7 +24,7 @@
             </plugin>
         </plugins>
     </build>
-<!--Dummy for webhook -->
+<!--Dummy for webhook1 -->
     <dependencyManagement>
         <dependencies>
             <dependency>

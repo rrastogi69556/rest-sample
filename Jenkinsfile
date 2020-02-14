@@ -25,7 +25,7 @@ pipeline {
                         branch 'production'
                     }
                     steps {
-                        echo 'Building PROD branch
+                        echo 'Building PROD branch'
                     }
                 }
             }

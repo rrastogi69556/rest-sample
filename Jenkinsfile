@@ -20,7 +20,7 @@ pipeline {
                        echo 'Building DEVELOPMENT branch'
                     }
                 }
-                stage('Deploy for production') {
+        stage('Deploy for production') {
                     when {
                         branch 'production'
                     }
@@ -28,8 +28,6 @@ pipeline {
                         echo 'Building PROD branch'
                     }
                 }
-            }
-        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'

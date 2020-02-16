@@ -1,3 +1,6 @@
+/*
+*Configuring webhook in github.
+*/
 pipeline {
     agent any
 

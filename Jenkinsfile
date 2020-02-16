@@ -1,5 +1,5 @@
 /*
-*Configuring webhook in github.
+* Configuring webhook in github. Build once manually.
 */
 pipeline {
     agent any

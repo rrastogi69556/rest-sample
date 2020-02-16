@@ -1,5 +1,5 @@
 /*
- * Testing with Multi-branch Pipeline github webhook trigger
+ * Testing with Multi-branch Pipeline github webhook trigger.Configure webhook for once in github.
  */
 pipeline {
     agent any

@@ -1,5 +1,5 @@
 /*
-* Configuring webhook in github. Build once manually.Then it automatically triggers
+* Configuring webhook in github. Build once manually.Then it automatically triggers...
 */
 pipeline {
     agent any

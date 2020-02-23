@@ -48,8 +48,9 @@ pipeline {
         stage ('Running Performance') {
             steps {
                 script {
-                    bat label: '', script: 'C:\\DEV\\apache-jmeter-5.2.1\\bin\\jmeter -Jjmeter.save.saveservice.output_format=xml -n -t \'src/main/resources/jmeter/JUnitRequest.jmx\' -l \'src/main/resources/jmeter/result/JunitResult.jtl\''
-                    
+                    ws('C:\\Users\\roopansr\\workspace\\rest-sample\\src\\main\\resources\\jmeter') {
+                        bat label: '', script: 'C:\\DEV\\apache-jmeter-5.2.1\\bin\\jmeter -Jjmeter.save.saveservice.output_format=xml -n -t JUnitRequest.jmx -l \'\\result\\JunitResult.jtl\''
+                    }
                 }
             }
         }

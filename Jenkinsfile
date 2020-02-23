@@ -14,7 +14,7 @@ pipeline {
             stage('Test') {
                 steps {
                    script {
-                        branchBuildBadge.setSubject('Master branch running')
+                        branchBuildBadge.setSubject('Master branch')
                         try {
                             echo 'Testing..'
                             branchBuildBadge.setStatus('passing')

@@ -13,7 +13,7 @@ pipeline {
             }
             stage('Test') {
                 steps {
-                   script {
+                    script {
                         branchBuildBadge.setSubject('Master branch')
                         try {
                             echo 'Testing..'
@@ -48,14 +48,11 @@ pipeline {
         stage ('Running Performance') {
             steps {
                 script {
-                     bat "jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t 'src/main/resources/jmeter/JUnitRequest.jmx' -l 'src/main/resources/jmeter/result/JunitResult.jtl'"
+                    bat "jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t 'src/main/resources/jmeter/JUnitRequest.jmx' -l 'src/main/resources/jmeter/result/JunitResult.jtl'"
+                    step([$class: 'ArtifactArchiver', artifacts: 'src/main/resources/jmeter/result/JMeter.jtl,src/main/resources/jmeter/result/jmeter.log'])
+                    perfReport filterRegex: '', sourceDataFiles: 'JMeter reports:"src/main/resources/jmeter/result/JunitResult.jtl";'
                 }
-                step([$class: 'ArtifactArchiver', artifacts: 'src/main/resources/jmeter/result/JMeter.jtl,src/main/resources/jmeter/result/jmeter.log'])
-                perfReport filterRegex: '', sourceDataFiles: 'JMeter reports:"src/main/resources/jmeter/result/JunitResult.jtl";'
-                
-       
             }
-         }
-       }
+        }
     }
 }

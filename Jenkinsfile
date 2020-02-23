@@ -8,21 +8,20 @@ pipeline {
     stages {
             stage('Build') {
                 steps {
-                    script {
+                    echo 'Building'
+                }
+            }
+            stage('Test') {
+                steps {
+                   script {
                         branchBuildBadge.setSubject('Master branch running')
                         try {
-                            echo 'Building..'
+                            echo 'Testing..'
                             branchBuildBadge.setStatus('passing')
                         } catch (Exception err) {
                             branchBuildBadge.setStatus('failing')
                         }
                     }
-                }
-            }
-            stage('Test') {
-                steps {
-                    branchBuildBadge.setStatus('Master branch in testing...')
-                    echo 'Testing..'
                 }
             }
             stage('Deliver for development') {

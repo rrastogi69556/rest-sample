@@ -50,7 +50,7 @@ pipeline {
                 script {
                     dir('C:\\Users\\roopansr\\workspace\\rest-sample\\src\\main\\resources\\jmeter') {
                         bat label: '', script: 'C:\\DEV\\apache-jmeter-5.2.1\\bin\\jmeter -Jjmeter.save.saveservice.output_format=xml -n -t JUnitRequest.jmx -l \'\\result\\JunitResult.jtl\''
-                        perfReport filterRegex: '', sourceDataFiles: '**/*.jtl'    
+                        perfReport filterRegex: '', sourceDataFiles: '\\result\\JunitResult.jtl'    
                     }
                     
                 }

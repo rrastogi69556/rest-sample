@@ -50,7 +50,7 @@ pipeline {
                 script {
                     ws('C:\\Users\\roopansr\\workspace\\rest-sample\\src\\main\\resources\\jmeter') {
                         bat label: '', script: 'C:\\DEV\\apache-jmeter-5.2.1\\bin\\jmeter -Jjmeter.save.saveservice.output_format=xml -n -t JUnitRequest.jmx -l \'\\result\\JunitResult.jtl\''
-                        step([$class: 'ArtifactArchiver', artifacts: '\\result\\JMeter.jtl,\\result\\jmeter.log'])
+                        step([$class: 'ArtifactArchiver', artifacts: '\\result\\JunitResult.jtl,\\result\\jmeter.log'])
                     }
                 }
             }

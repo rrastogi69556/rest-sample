@@ -1,0 +1,32 @@
+#################
+## Ignore
+#################
+
+overlays
+# Eclipse
+.classpath
+.project
+.settings/
+.ssh
+
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+.gitconfig
+dependency-reduced-pom.xml
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+#Reports/Test/Code Analysis
+/.project
+/node/
+/target/
+/tmp/

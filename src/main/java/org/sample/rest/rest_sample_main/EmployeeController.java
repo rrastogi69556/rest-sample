@@ -1,4 +1,4 @@
-package org.sample.rest.rest_sample;
+package org.sample.rest.rest_sample_main;
 
 public class EmployeeController {
 	

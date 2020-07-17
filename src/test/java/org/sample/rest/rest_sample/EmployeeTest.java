@@ -2,6 +2,7 @@ package org.sample.rest.rest_sample;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.sample.rest.rest_sample_main.Employee;
 
 public class EmployeeTest {
 

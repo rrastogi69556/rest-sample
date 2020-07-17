@@ -1,4 +1,4 @@
-package org.sample.rest.rest_sample;
+package org.sample.rest.rest_sample_main;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,10 +12,6 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-
-import org.sample.rest.rest_sample.Employee;
-import org.sample.rest.rest_sample.EmployeeServiceImpl;
 
 /**
  * Root resource (exposed at "myresource" path)

@@ -1,4 +1,4 @@
-package org.sample.rest.rest_sample;
+package org.sample.rest.rest_sample_main;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

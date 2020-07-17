@@ -1,4 +1,4 @@
-package org.sample.rest.rest_sample;
+package org.sample.rest.rest_sample_main;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
